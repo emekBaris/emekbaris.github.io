@@ -9,6 +9,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script>
+      function toggleDetails(id) {
+        var item = document.getElementById(id);
+        if (item) {
+          item.className = item.className === 'hidden' ? 'unhidden' : 'hidden';
+        }
+      }
+    </script>
     
   </head>
 
@@ -31,7 +39,7 @@
               </td>
               <td style="padding:2.5%;width:63%;vertical-align:middle">
                 <p class="intro-text">
-		I am a Robotics Researcher at the Honda Research Institute, where I advance multi-fingered manipulation. I am currently leading and contributing to a project focused on online learning for dexterous manipulation in the real world, with the goal of advancing real-time planning, exploration, and data-efficient learning.
+		I am a Robotics Researcher at the Honda Research Institute, where my work focuses on multi-fingered manipulation. I am currently leading and contributing to a project focused on online learning for dexterous manipulation in the real world, with the goal of advancing real-time planning, exploration, and data-efficient learning.
                 </p>
                 <p class="intro-text">
 		I received my Ph.D. from Northwestern University in 2024, where I was advised by <a href="https://robotics.northwestern.edu/people/profiles/faculty/lynch-kevin.html">Kevin Lynch</a> and <a href="https://www.sralab.org/researchers/jose-l-pons-phd">Jose Pons</a>. I also hold a robotics-focused Master’s degree from ETH Zürich, where I completed my thesis at the <a href="https://rsl.ethz.ch/">Robotic Systems Lab</a>. I have extensive research and hands-on experience with robots that physically interact with their environments.
@@ -49,6 +57,54 @@
                 <p class="intro-text">
                   During my PhD, I worked on interaction force controllers for lower-limb exoskeletons and introduced a novel gait rehabilitation paradigm in which a therapist and a patient were each equipped with a lower-limb exoskeleton virtually connected to one another, enabling bidirectional physical interaction.
                 </p>
+                <h3 class="research-subheading">Selected Works</h3>
+                <ul class="research-list">
+                  <li>
+                    <div class="research-thumb">
+                      <img src="images/proto5.png" alt="Online Learning for Dexterous Manipulation">
+                    </div>
+                    <div class="research-text">
+                      <h3>Online Learning for Dexterous Manipulation</h3>
+                      <p class="research-links">
+                        <a href="javascript:toggleDetails('online-learning-dexterous-manipulation-tldr');">TLDR</a>
+                      </p>
+                      <div id="online-learning-dexterous-manipulation-tldr" class="hidden">
+                        <hr>
+                        <b>TLDR:</b>
+                        <ul>
+                          <li>Focusing on tasks for which teleoperation demonstrations are not possible and in settings where direct sim-to-real approaches fail.</li>
+                          <li>Online planning and real-world learning in a data-efficient manner, combining both model-based and reinforcement learning approaches.</li>
+                          <li>Will share more when possible.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="research-thumb">
+                      <img src="images/tepi.png" alt="Therapist-Exoskeleton-Patient Interaction">
+                    </div>
+                    <div class="research-text">
+                      <h3>Therapist-Exoskeleton-Patient Interaction: An Immersive Gait Therapy</h3>
+                      <p class="research-authors">
+                        Emek Barış Küçüktabak*, Matthew R. Short*, Lorenzo Vianello*,
+                        Daniel Ludvig, Levi Hargrove, Kevin Lynch, Jose Pons
+                      </p>
+                      <p class="research-venue">Under Review</p>
+                      <p class="research-links">
+                        <a href="javascript:toggleDetails('therapist-exoskeleton-patient-interaction-tldr');">TLDR</a>
+                      </p>
+                      <div id="therapist-exoskeleton-patient-interaction-tldr" class="hidden">
+                        <hr>
+                        <b>TLDR:</b>
+                        <ul>
+                          <li>Introduces Therapist-Exoskeleton-Patient Interaction (TEPI), where a therapist and post-stroke patient wear lower-limb exoskeletons virtually connected at the hips and knees through spring-damper elements.</li>
+                          <li>The bidirectional haptic connection lets the therapist guide the patient's gait while receiving real-time physical feedback about the patient's movement.</li>
+                          <li>In eight chronic post-stroke participants, TEPI produced larger joint range of motion, step length, and step height than conventional manual therapy while maintaining active participation and high patient motivation.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </td>
             </tr>
           </tbody></table>
