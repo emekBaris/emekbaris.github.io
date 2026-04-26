@@ -230,12 +230,19 @@ span.highlight {
   flex: 0 0 160px;
 }
 
-.research-thumb img {
+.research-thumb img,
+.research-thumb video {
   width: 160px;
   height: 100px;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 3px;
   box-shadow: 0.05em 0.05em 0.2em rgba(0, 0, 0, 0.3);
+}
+
+.research-thumb-natural img,
+.research-thumb-natural video {
+  height: auto;
+  object-fit: initial;
 }
 
 .research-text {
