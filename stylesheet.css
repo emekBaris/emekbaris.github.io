@@ -313,17 +313,110 @@ span.highlight {
 }
 
 @media (max-width: 600px) {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .top-header {
+    padding: 16px 16px 4px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+  }
+
+  .top-name {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .top-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 14px;
+  }
+
+  .top-nav a {
+    margin-left: 0;
+    padding: 4px 0;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  body > table {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  body > table > tbody > tr > td > table:first-of-type,
+  body > table > tbody > tr > td > table:first-of-type > tbody,
+  body > table > tbody > tr > td > table:first-of-type > tbody > tr,
+  body > table > tbody > tr > td > table:first-of-type > tbody > tr > td {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  body > table > tbody > tr > td > table:first-of-type > tbody > tr > td:first-child {
+    padding: 18px 16px 6px !important;
+  }
+
+  body > table > tbody > tr > td > table:first-of-type > tbody > tr > td:last-child {
+    padding: 6px 16px 10px !important;
+  }
+
+  body > table > tbody > tr > td > table:nth-of-type(2) > tbody > tr > td {
+    padding: 16px !important;
+  }
+
+  .profile-photo {
+    width: 180px;
+    max-width: 58vw;
+    margin: 0 auto;
+  }
+
+  .intro-text {
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+
+  .research-subheading {
+    margin-top: 1.5em;
+  }
+
+  .research-list {
+    font-size: 16px;
+    margin-top: 1em;
+  }
+
   .research-list > li {
     display: block;
+    margin-bottom: 1.8em;
   }
 
   .research-thumb {
-    margin-bottom: .8em;
+    margin-bottom: .75em;
   }
 
-  .research-thumb img {
+  .research-thumb img,
+  .research-thumb video {
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 10;
+  }
+
+  .research-text h3 {
+    margin-top: 0;
+    line-height: 1.25;
   }
 }
