@@ -282,6 +282,11 @@ span.highlight {
   color: #666;
 }
 
+.research-award {
+  color: #000;
+  font-weight: 700;
+}
+
 .research-links a {
   font-family: inherit;
   font-size: inherit;

@@ -7,7 +7,7 @@
 
     <meta name="author" content="Emek Barış Küçüktabak">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/robot-hand.jpg" type="image/jpeg">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <script>
       function toggleDetails(id) {
@@ -61,20 +61,41 @@
                 <ul class="research-list">
                   <li>
                     <div class="research-thumb">
-                      <img src="images/proto5.png" alt="Online Learning for Dexterous Manipulation">
+                      <img src="images/proto5.png" alt="Primitive Informed Sampling-based MPC for Multi-fingered Dexterous Manipulation">
                     </div>
                     <div class="research-text">
-                      <h3>Online Learning for Dexterous Manipulation</h3>
-                      <p class="research-venue">Honda Research Institute</p>
+                      <h3>Primitive Informed Sampling-based MPC for Multi-fingered Dexterous Manipulation</h3>
+                      <p class="research-venue">Honda Research Institute, 2025-2026</p>
                       <p class="research-links">
-                        <a href="javascript:toggleDetails('online-learning-dexterous-manipulation-tldr');">TLDR</a>
+                        <a href="javascript:toggleDetails('primitive-informed-sampling-mpc-tldr');">TLDR</a>
                       </p>
-                      <div id="online-learning-dexterous-manipulation-tldr" class="hidden">
+                      <div id="primitive-informed-sampling-mpc-tldr" class="hidden">
                         <hr>
                         <b>TLDR:</b>
                         <ul>
-                          <li>Focusing on tasks for which teleoperation demonstrations are not possible and in settings where direct sim-to-real approaches fail.</li>
-                          <li>Online planning and real-world learning in a data-efficient manner, combining both model-based and reinforcement learning approaches.</li>
+                          <li>Improves exploration efficiency by sampling low-dimensional manipulation primitives together with joint-level residual actions.</li>
+                          <li>Enables contact-rich dexterous manipulation tasks that are infeasible to perform through teleoperation.</li>
+                          <li>Will share more when possible.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="research-thumb">
+                      <img src="images/proto5.png" alt="Real-World Reinforcement Learning with Sampling-based MPC Guidance for Multi-fingered Dexterous Manipulation">
+                    </div>
+                    <div class="research-text">
+                      <h3>Real-World Reinforcement Learning with Sampling-based MPC Guidance for Multi-fingered Dexterous Manipulation</h3>
+                      <p class="research-venue">Honda Research Institute, 2025-2026</p>
+                      <p class="research-links">
+                        <a href="javascript:toggleDetails('real-world-rl-mpc-guidance-tldr');">TLDR</a>
+                      </p>
+                      <div id="real-world-rl-mpc-guidance-tldr" class="hidden">
+                        <hr>
+                        <b>TLDR:</b>
+                        <ul>
+                          <li>Uses sampling-based model predictive control as a structured exploration guide for off-policy reinforcement learning.</li>
+                          <li>Enables real-world learning with significantly reduced training time, typically 5 to 60 minutes, and very few environment resets.</li>
                           <li>Will share more when possible.</li>
                         </ul>
                       </div>
@@ -85,14 +106,16 @@
                       <img src="images/tepi_gif.gif" alt="Therapist-Exoskeleton-Patient Interaction">
                     </div>
                     <div class="research-text">
-                      <h3>Therapist-Exoskeleton-Patient Interaction: An Immersive Gait Therapy</h3>
+                      <h3>Therapist-Exoskeleton-Patient Interaction for Gait Therapy</h3>
                       <p class="research-authors">
                         <b>Emek Barış Küçüktabak</b>*, Matthew R. Short*, Lorenzo Vianello*,
                         Daniel Ludvig, Levi Hargrove, Kevin Lynch, Jose Pons
                       </p>
                       <p class="research-venue">Under Review</p>
                       <p class="research-links">
-                        <a href="javascript:toggleDetails('therapist-exoskeleton-patient-interaction-tldr');">TLDR</a>
+                        <a href="javascript:toggleDetails('therapist-exoskeleton-patient-interaction-tldr');">TLDR</a> |
+                        <a href="https://arxiv.org/abs/2507.16059" target="_blank">Paper</a> |
+                        <a href="videos/movie_rev3.mp4" target="_blank">Video</a>
                       </p>
                       <div id="therapist-exoskeleton-patient-interaction-tldr" class="hidden">
                         <hr>
@@ -113,9 +136,9 @@
                       <h3>Haptic Transparency and Interaction Force Control for a Lower-Limb Exoskeleton</h3>
                       <p class="research-authors">
                         <b>Emek Barış Küçüktabak</b>, Yue Wen, Sangjoon J Kim, Matthew R Short, Daniel Ludvig,
-                        Levi Hargrove, Eric J Perreault, Kevin M Lynch, Jose L Pons
+                        Levi Hargrove, Eric J Perreault, Kevin Lynch, Jose Pons
                       </p>
-                      <p class="research-venue">IEEE Transactions on Robotics</p>
+                      <p class="research-venue">IEEE Transactions on Robotics, 2024</p>
                       <p class="research-links">
                         <a href="javascript:toggleDetails('haptic-transparency-interaction-force-control-tldr');">TLDR</a> |
                         <a href="https://arxiv.org/pdf/2301.06244" target="_blank">Paper</a> |
@@ -128,6 +151,115 @@
                           <li>Introduced whole-exoskeleton closed-loop compensation (WECC) to estimate interaction torques across the full gait cycle using whole-body dynamics and joint torque measurements.</li>
                           <li>Tracks desired interaction torques through constrained optimization, enabling transparent, assistive, or resistive behavior while respecting physical and safety limits.</li>
                           <li>Experiments with three subjects showed consistently low torque-tracking error for both zero and nonzero interaction torques, outperforming a simplified dynamic model and passive exoskeleton behavior.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="research-thumb">
+                      <img src="images/icorr_gif.gif" alt="Virtual Physical Coupling of Two Lower-Limb Exoskeletons">
+                    </div>
+                    <div class="research-text">
+                      <h3>Virtual Physical Coupling of Two Lower-Limb Exoskeletons</h3>
+                      <p class="research-authors">
+                        <b>Emek Barış Küçüktabak</b>, Yue Wen, Matthew R Short, Efe Demirbas,
+                        Kevin Lynch, Jose Pons
+                      </p>
+                      <p class="research-venue">IEEE International Conference on Rehabilitation Robotics (ICORR), 2023</p>
+                      <p class="research-links">
+                        <a href="javascript:toggleDetails('virtual-physical-coupling-exoskeletons-tldr');">TLDR</a> |
+                        <a href="https://arxiv.org/abs/2307.06479" target="_blank">Paper</a> |
+                        <a href="https://www.youtube.com/watch?v=RTO41Jn5rO8" target="_blank">Video</a>
+                      </p>
+                      <div id="virtual-physical-coupling-exoskeletons-tldr" class="hidden">
+                        <hr>
+                        <b>TLDR:</b>
+                        <ul>
+                          <li>Developed a system that renders haptic interaction between two users walking in multi-joint lower-limb exoskeletons by commanding interaction torques from user kinematics and virtual coupling properties.</li>
+                          <li>Demonstrated soft and hard haptic properties, bidirectional and unidirectional connections, and virtual couplings expressed in both joint space and task space.</li>
+                          <li>With haptic coupling, dyads generated synchronized movement, and joint-angle differences decreased as virtual stiffness increased.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="research-thumb">
+                      <img src="images/icra_gif.gif" alt="Exoskeleton-Mediated Physical Human-Human Interaction for a Sit-to-Stand Rehabilitation Task">
+                    </div>
+                    <div class="research-text">
+                      <h3>Exoskeleton-Mediated Physical Human-Human Interaction for a Sit-to-Stand Rehabilitation Task</h3>
+                      <p class="research-authors">
+                        Lorenzo Vianello, <b>Emek Barış Küçüktabak</b>, Matthew Short, Clément Lhoste,
+                        Lorenzo Amato, Kevin Lynch, Jose Pons
+                      </p>
+                      <p class="research-venue">IEEE International Conference on Robotics and Automation (ICRA), 2024<br>
+                        (<b class="research-award">Best Medical Robotics Paper, Best Paper Finalist</b>)</p>
+                      <p class="research-links">
+                        <a href="javascript:toggleDetails('exoskeleton-mediated-sts-rehabilitation-tldr');">TLDR</a> |
+                        <a href="https://arxiv.org/abs/2310.06084" target="_blank">Paper</a> |
+                        <a href="videos/icra.mp4" target="_blank">Video</a>
+                      </p>
+                      <div id="exoskeleton-mediated-sts-rehabilitation-tldr" class="hidden">
+                        <hr>
+                        <b>TLDR:</b>
+                        <ul>
+                          <li>Proposed using two lower-limb exoskeletons to mediate physical therapist-patient interaction during sit-to-stand rehabilitation exercises.</li>
+                          <li>The whole-body control framework transmits online feedback between users while assisting movement, enforcing balance, and supporting users with greater difficulty.</li>
+                          <li>The framework improves therapist-patient interaction, safety enforcement, and performance quantification while preserving active patient participation.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="research-thumb">
+                      <img src="images/anyexo_gif.gif" alt="Towards Dynamic Transparency: Robust Interaction Force Tracking Using Multi-Sensory Control on an Arm Exoskeleton">
+                    </div>
+                    <div class="research-text">
+                      <h3>Towards Dynamic Transparency: Robust Interaction Force Tracking Using Multi-Sensory Control on an Arm Exoskeleton</h3>
+                      <p class="research-authors">
+                        Yves Zimmermann, <b>Emek Barış Küçüktabak</b>, Farbod Farshidian, Robert Riener, Marco Hutter
+                      </p>
+                      <p class="research-venue">ETH Zurich, Master's Thesis, 2018-2019</p>
+                      <p class="research-venue">IEEE International Conference on Intelligent Robots and Systems (IROS), 2020</p>
+                      <p class="research-links">
+                        <a href="javascript:toggleDetails('dynamic-transparency-arm-exoskeleton-tldr');">TLDR</a> |
+                        <a href="papers/thesis.pdf" target="_blank">Master's Thesis</a> |
+                        <a href="https://ieeexplore.ieee.org/document/9341054" target="_blank">Paper</a> |
+                        <a href="https://www.youtube.com/watch?v=R23SA-si9cw" target="_blank">Video</a>
+                      </p>
+                      <div id="dynamic-transparency-arm-exoskeleton-tldr" class="hidden">
+                        <hr>
+                        <b>TLDR:</b>
+                        <ul>
+                          <li>Introduced a virtual model controller that uses two 6-DoF force sensors, joint accelerations, and inverse dynamics to track interaction wrenches on the multi-DoF torque-controlled ANYexo arm exoskeleton.</li>
+                          <li>Combined disturbance observation with acceleration estimation from joint encoders and seven IMUs to improve robustness to modeling errors during dynamic human motion.</li>
+                          <li>Reduced felt inertia and maximum reflected joint torque by more than a factor of three compared with prior transparent controllers, setting a new haptic transparency benchmark for comparable devices.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="research-thumb">
+                      <img src="images/alma_gif.gif" alt="Executing Tasks with a Walking Manipulator: Opening Doors">
+                    </div>
+                    <div class="research-text">
+                      <h3>Executing Tasks with a Walking Manipulator: Opening Doors</h3>
+                      <p class="research-authors">
+                        <b>Emek Barış Küçüktabak</b>. Advised by Dario Bellicoso, Marko Bjelonic,
+                        Koen Kramer, Marco Hutter
+                      </p>
+                      <p class="research-venue">ETH Zurich, Semester Project, 2018</p>
+                      <p class="research-links">
+                        <a href="javascript:toggleDetails('walking-manipulator-door-opening-tldr');">TLDR</a> |
+                        <a href="videos/door_open.mp4" target="_blank">Video</a>
+                      </p>
+                      <div id="walking-manipulator-door-opening-tldr" class="hidden">
+                        <hr>
+                        <b>TLDR:</b>
+                        <ul>
+                          <li>Developed a door-opening behavior for a walking manipulator, combining a quadruped mobile base with an arm to execute a practical whole-body manipulation task.</li>
+                          <li>Coordinated base motion and arm motion across the door-opening sequence, including approaching the handle, manipulating the door, and moving through the doorway.</li>
+                          <li>Evaluated the task with door and manipulator trajectories, demonstrating the feasibility of mobile manipulation on a legged robotic platform.</li>
                         </ul>
                       </div>
                     </div>
